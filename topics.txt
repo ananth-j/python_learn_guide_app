@@ -1,0 +1,95 @@
+1 Fundamentals
+
+Syntax and Basics:
+
+  Variables,
+     
+  Data Types (Integers, Floats, Strings, Booleans)
+
+  Operators (Arithmetic, Comparison, Logical, Assignment)
+
+  Control Flow (Conditional Statements: if, elif, else; Loops: for, while)
+
+  Comments, Indentation
+
+  Data Structures:
+  Lists (Ordered, Mutable)
+
+  Tuples (Ordered, Immutable)
+
+  Dictionaries (Key-Value pairs)
+
+  Sets (Unordered, Unique elements)
+
+  Functions:
+  Defining and Calling Functions
+
+  Arguments and Parameters
+
+  Return Values
+
+  Scope (Local vs. Global Variables)
+
+  Lambda Functions (Anonymous functions)
+
+  Modules and Packages:
+    Importing Modules
+
+  Installing Packages (pip)
+
+  File Handling:
+    Reading
+    Writing Files
+    File Modes
+    Working with Directories
+
+
+II. Intermediate Concepts
+
+   Object-Oriented Programming (OOP):
+   Classes and Objects
+   Inheritance
+   Polymorphism
+   Encapsulation
+   Abstraction
+   Exception Handling:
+        try, except, finally blocks
+   Raising Exceptions
+   Advanced Data Structures:
+Collections Module (namedtuple, deque, Counter, etc.)
+More on Lists, Dictionaries, Sets (Comprehensions, etc.)
+Iterators and Generators:
+Understanding Iterables and Iterators
+Creating Generators
+Decorators:
+Function Decorators
+Class Decorators
+Regular Expressions:
+Pattern Matching
+Searching and Replacing
+Working with Libraries:
+Popular Libraries (NumPy, Pandas, Matplotlib, Requests, etc.)
+
+
+III. Advanced Topics
+
+Metaprogramming:
+Metaclasses
+Dynamic Code Generation
+Concurrency and Parallelism:
+Threads
+Processes
+Asyncio
+Networking:
+Sockets
+HTTP Requests
+Databases:
+SQL Databases (SQLite, MySQL, PostgreSQL)
+NoSQL Databases (MongoDB)
+Testing:
+Unit Testing (unittest, pytest)
+Debugging and Profiling:
+Debugging Tools
+Profiling Code for Optimization
+C Extensions:
+Writing Python extensions in C
