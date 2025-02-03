@@ -2,6 +2,7 @@ import 'package:flutter/material.dart';
 import 'package:google_fonts/google_fonts.dart';
 
 import '../utils/colors.dart';
+import '../utils/master_data_list.dart';
 import 'menu_screen.dart';
 import '../widgets/main_title_tail.dart';
 
@@ -91,22 +92,17 @@ class _HomeScreenState extends State<HomeScreen> {
             child: Container(
               width: double.infinity,
               decoration: BoxDecoration(gradient: bodyBgGradient),
-              child: const Column(
-                children: [
-                  SizedBox(height: 5),
-                  MainTitleTail(
-                    pageLink: 'assets/py_png (1).png',
-                    title: 'Why Python ?',
-                  ),
-                  MainTitleTail(
-                    pageLink: 'assets/py_png (1).png',
-                    title: 'Whats is Python ?',
-                  ),
-                  MainTitleTail(
-                    pageLink: 'assets/py_png (1).png',
-                    title: 'Variables',
-                  ),
-                ],
+              child: ListView.builder(
+                shrinkWrap: true,
+                itemCount: masterList.length,
+                itemBuilder: (context, index) {
+                  var data = masterList[index];
+                  print(data[0][0]);
+                  print(data[0][1]);
+                  print(data);
+
+                  return Container();
+                },
               ),
             ),
           )

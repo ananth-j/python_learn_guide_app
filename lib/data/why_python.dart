@@ -1,6 +1,5 @@
-List<List<dynamic>> whatIsPython = [
-  ["no", 1],
-  ["title", "What is Python"],
+List<List<dynamic>> whyPython = [
+  ["title", "Why is Python"],
   ["subTitle", "Python is One of the power full high level language"],
   [
     "text",
