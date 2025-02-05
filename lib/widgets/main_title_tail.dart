@@ -4,8 +4,8 @@ import '../screens/ans_screen_t1.dart';
 
 class MainTitleTail extends StatelessWidget {
   final String title;
-  final String pageLink;
-  const MainTitleTail({super.key, required this.title, required this.pageLink});
+  final List<List<dynamic>> data;
+  const MainTitleTail({super.key, required this.title, required this.data});
 
   @override
   Widget build(BuildContext context) {
@@ -13,7 +13,7 @@ class MainTitleTail extends StatelessWidget {
       onTap: () {
         Navigator.of(context).push(MaterialPageRoute(
             builder: (context) => AnsScreenT1(
-                  data: pageLink,
+                  data: data,
                   title: title,
                 )));
       },

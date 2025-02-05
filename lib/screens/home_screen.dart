@@ -18,7 +18,7 @@ class _HomeScreenState extends State<HomeScreen> {
   Widget build(BuildContext context) {
     return Scaffold(
       body: Column(
-        mainAxisSize: MainAxisSize.min,
+        mainAxisSize: MainAxisSize.max,
         children: [
           //App Bar
           Container(
@@ -87,25 +87,26 @@ class _HomeScreenState extends State<HomeScreen> {
           ),
 
           // Body
-
+          const SizedBox(
+            height: 5,
+          ),
           Expanded(
             child: Container(
               width: double.infinity,
               decoration: BoxDecoration(gradient: bodyBgGradient),
               child: ListView.builder(
-                shrinkWrap: true,
+                padding: EdgeInsets.all(0),
                 itemCount: masterList.length,
                 itemBuilder: (context, index) {
                   var data = masterList[index];
-                  print(data[0][0]);
-                  print(data[0][1]);
-                  print(data);
-
-                  return Container();
+                  return MainTitleTail(
+                    data: data,
+                    title: data[1][1],
+                  );
                 },
               ),
             ),
-          )
+          ),
         ],
       ),
     );
