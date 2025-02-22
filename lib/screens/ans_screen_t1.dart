@@ -1,8 +1,11 @@
 import 'package:flutter/material.dart';
 import 'package:google_fonts/google_fonts.dart';
+import 'package:python_learn_guide/ans_widgets/key_point_widget.dart';
 
 import '../ans_widgets/code_widget.dart';
-import '../ans_widgets/sub_title_widget.dart';
+import '../ans_widgets/fact_widgets.dart';
+import '../ans_widgets/h1_text.dart';
+import '../ans_widgets/h2_text.dart';
 import '../ans_widgets/text_widget.dart';
 
 class AnsScreenT1 extends StatefulWidget {
@@ -33,14 +36,20 @@ class _AnsScreenT1State extends State<AnsScreenT1> {
             var header = flData[0]; // "title"
             var headerData = flData[1]; // "what is python"
             switch (header) {
-              case "title":
-                return SubTitleWidget(subTitle: headerData);
               case "text":
                 return TextWidget(text: headerData);
+              case "h1":
+                return H1(h1: headerData);
+              case "h2":
+                return H2(h2: headerData);
+              case "fact":
+                return FactWidget(fact: headerData);
               case "code":
                 return CodeWidget(code: headerData);
+              case "keyPoint":
+                return KeyPointWidget(keyPoint: headerData);
             }
-            return Text("Nope");
+            return Container();
           }),
     );
   }
